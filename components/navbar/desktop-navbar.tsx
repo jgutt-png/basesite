@@ -11,7 +11,6 @@ import {
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Link } from "next-view-transitions";
-import { ModeToggle } from "../mode-toggle";
 
 type Props = {
   navItems: {
@@ -61,7 +60,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         )}
       </AnimatePresence>
       <div className="flex flex-row gap-2 items-center">
-        <Logo />
+        <Logo showBackground={showBackground} />
         <div className="flex items-center gap-1.5">
           {navItems.map((item) => (
             <NavBarItem href={item.link} key={item.title} target={item.target}>
@@ -70,14 +69,22 @@ export const DesktopNavbar = ({ navItems }: Props) => {
           ))}
         </div>
       </div>
-      <div className="flex space-x-2 items-center">
-        <ModeToggle />
-        <Button variant="simple" as={Link} href="/login">
-          Login
-        </Button>
-        <Button as={Link} href="/signup">
+      <div className="flex items-center space-x-3">
+        <Link
+          href="/contact"
+          className={cn(
+            "flex items-center justify-center h-10 px-6 rounded-full backdrop-blur-lg text-sm font-light tracking-[-0.4px] transition-colors duration-200",
+            showBackground ? "bg-white text-[#1B1F3B]" : "bg-[#737B8B] text-white"
+          )}
+        >
+          Contact Us
+        </Link>
+        <Link
+          href="/signup"
+          className="flex items-center justify-center h-10 px-6 rounded-full bg-[#F95738] bg-opacity-75 backdrop-blur-lg text-[#F7F9FD] text-sm font-medium tracking-[-0.4px]"
+        >
           Sign Up
-        </Button>
+        </Link>
       </div>
     </div>
   );

@@ -59,10 +59,23 @@ export const GridFeatures = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10">
-      {features.map((feature, index) => (
-        <Feature key={feature.title} {...feature} index={index} />
-      ))}
+    <div className="py-20">
+      <div className="text-center mb-16 px-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-medium mb-6 leading-tight tracking-[-0.4px]">
+          The Platform That Grows With Every Home You Sell.
+        </h2>
+        <p className="text-xl md:text-2xl text-[#737B8B] max-w-5xl mx-auto leading-relaxed">
+          BASE gives builders, brokers, and enterprise partners a unified ecosystem that drives sales before the close and engagement long after.
+        </p>
+        <p className="text-xl md:text-2xl text-[#737B8B] max-w-5xl mx-auto mt-4 leading-relaxed">
+          From interactive design tools that sell upgrades instantly to AI-driven workflows that automate operations and service, BASE turns every transaction into an ongoing relationship. Extend your brand, increase your revenue, and transform one-time buyers into lifelong clients.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10">
+        {features.map((feature, index) => (
+          <Feature key={feature.title} {...feature} index={index} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,124 +1,68 @@
 import React from "react";
-import { Heading } from "./heading";
 import { Subheading } from "./subheading";
-import { cn } from "@/lib/utils";
-import { GridLineHorizontal, GridLineVertical } from "./grid-lines";
-import { SkeletonOne } from "./skeletons/first";
-import { SkeletonTwo } from "./skeletons/second";
-import { SkeletonFour } from "./skeletons/fourth";
-import { SkeletonThree } from "./skeletons/third";
+import { UserIcon } from "lucide-react";
 
 export const Features = () => {
-  const features = [
-    {
-      title: "Generate images with text",
-      description:
-        "Generate images from a text prompt, a video, or a video segment in bulk at the speed of light.",
-      skeleton: <SkeletonOne />,
-      className:
-        "col-span-1 lg:col-span-4 border-b border-r dark:border-neutral-800",
-    },
-    {
-      title: "Create stupid simple chatbots",
-      description:
-        "Create Chatbots with a single button click. Customize as per your requirements and the AI will take care of the rest.",
-      skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
-    },
-    {
-      title: "We support every single LLM",
-      description:
-        "Whether it's OpenAI, GroQ or Your Mom's Basement LLM, we support everything.",
-      skeleton: <SkeletonThree />,
-      className: "col-span-1 lg:col-span-3 border-r dark:border-neutral-800",
-    },
-    {
-      title: "Deploy in seconds",
-      description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3",
-    },
-  ];
   return (
     <div className="relative z-20 py-10 lg:py-40 overflow-hidden">
-      <Heading as="h2">Packed with thousands of features</Heading>
-      <Subheading className="text-center ">
-        From Image generation to video generation, Everything AI has APIs for
-        literally everything. It can even create this website copy for you.
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-semibold text-center mb-6 leading-tight tracking-[-0.4px] max-w-5xl mx-auto">
+        The Platform That Grows With Every Home You Sell.
+      </h2>
+      <Subheading className="text-center max-w-5xl mx-auto">
+        BASE gives builders, brokers, and enterprise partners a unified ecosystem that drives sales before the close and engagement long after.
+        <br /><br />
+        From interactive design tools that sell upgrades instantly to AI-driven workflows that automate operations and service, BASE turns every transaction into an ongoing relationship. Extend your brand, increase your revenue, and transform one-time buyers into lifelong clients.
       </Subheading>
 
-      <div className="relative">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} className={feature.className}>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-              <div className=" h-full w-full">{feature.skeleton}</div>
-            </FeatureCard>
-          ))}
+      <div className="w-full max-w-7xl mx-auto mt-12 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* For Builders Section */}
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Builders:</h3>
+            <p className="text-base text-[#737c8b] mb-6">
+              Make every home custom, increase your sale price by 30%, and sell your units sold in advance- long before you've even broken ground.
+            </p>
+            <div className="relative w-full h-[280px] rounded-2xl bg-gray-200">
+              {/* Builder Dashboard Image placeholder */}
+            </div>
+          </div>
+
+          {/* For Brokers & Agents Section */}
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Brokers & Agents:</h3>
+            <p className="text-base text-[#737c8b] mb-6">
+              Stand out in a crowded market, crush cosmetic objections, and increase commissions by selling homes for more.
+            </p>
+            <div className="relative w-full h-[280px] rounded-2xl bg-gray-200">
+              {/* Broker Dashboard Image placeholder */}
+            </div>
+          </div>
+
+          {/* For Home Buyers, Owners, and Sellers Section */}
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">
+              For Home Buyers, Owners, and Sellers:
+            </h3>
+            <p className="text-base text-[#737c8b] mb-6">
+              BΛSE isn't just for the sale, it's for the entire lifecycle of the home. From before move-in, through your mortgage, and even when it's time to sell, you can manage everything from buying furniture, hiring painters, or even tracking your HVAC warranty. BΛSE does it all.
+            </p>
+            <div className="relative w-full h-[400px] rounded-2xl bg-gray-200">
+              {/* Home Owner Dashboard placeholder */}
+            </div>
+          </div>
+
+          {/* For Enterprise Section */}
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Enterprise:</h3>
+            <p className="text-base text-[#737c8b] mb-6">
+              BaseAI is your personal, private, in-house AI assistant that can do everything from checking building codes or zoning laws to pulling information from your internal client documents- all custom-configured for your organization.
+            </p>
+            <div className="relative w-full h-[400px] rounded-2xl bg-gray-200">
+              {/* Enterprise AI Chat placeholder */}
+            </div>
+          </div>
         </div>
-        <GridLineHorizontal
-          style={{
-            top: 0,
-            left: "-10%",
-            width: "120%",
-          }}
-        />
-
-        <GridLineHorizontal
-          style={{
-            bottom: 0,
-            left: "-10%",
-            width: "120%",
-          }}
-        />
-
-        <GridLineVertical
-          style={{
-            top: "-10%",
-            right: 0,
-            height: "120%",
-          }}
-        />
-        <GridLineVertical
-          style={{
-            top: "-10%",
-            left: 0,
-            height: "120%",
-          }}
-        />
       </div>
     </div>
-  );
-};
-
-const FeatureCard = ({
-  children,
-  className,
-}: {
-  children?: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn(`p-4 sm:p-8 relative overflow-hidden`, className)}>
-      {children}
-    </div>
-  );
-};
-
-const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <Heading as="h3" size="sm" className="text-left">
-      {children}
-    </Heading>
-  );
-};
-
-const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <Subheading className="text-left max-w-sm mx-0 lg:text-sm my-2">
-      {children}
-    </Subheading>
   );
 };

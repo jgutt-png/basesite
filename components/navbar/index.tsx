@@ -3,20 +3,7 @@ import { DesktopNavbar } from "./desktop-navbar";
 import { MobileNavbar } from "./mobile-navbar";
 import { motion } from "framer-motion";
 
-const navItems = [
-  {
-    title: "Pricing",
-    link: "/pricing",
-  },
-  {
-    title: "Blog",
-    link: "/blog",
-  },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
-];
+const navItems: { title: string; link: string; target?: "_blank" }[] = [];
 
 export function NavBar() {
   return (

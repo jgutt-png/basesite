@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'basemyhome.s3.us-east-1.amazonaws.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'base-ai-portal.s3.us-east-1.amazonaws.com',
+      },
     ],
   },
   pageExtensions: ["ts", "tsx", "mdx"],

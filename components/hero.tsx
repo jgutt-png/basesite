@@ -1,17 +1,13 @@
 "use client";
 
 import Balancer from "react-wrap-balancer";
-import { Button } from "./button";
-import { HiArrowRight } from "react-icons/hi2";
 import { Badge } from "./badge";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { Link } from "next-view-transitions";
 
 export const Hero = () => {
-  const router = useRouter();
   return (
     <div className="flex flex-col min-h-screen pt-20 md:pt-40 relative overflow-hidden">
       <motion.div
@@ -30,7 +26,7 @@ export const Hero = () => {
         className="flex justify-center"
       >
         <Badge onClick={() => router.push("/blog/top-5-llm-of-all-time")}>
-          Make Every Home Custom
+          🏡 | Make Every Home Custom
         </Badge>
       </motion.div>
       <motion.h1
@@ -48,7 +44,7 @@ export const Hero = () => {
         }}
         className="text-2xl md:text-3xl lg:text-6xl font-semibold max-w-5xl mx-auto text-center mt-6 relative z-10"
       >
-        <Balancer>Home Lifecycle Management for Residential Real Estate</Balancer>
+        <Balancer>A 3D Sales & Ownership Platform for the Entire Home Lifecycle</Balancer>
       </motion.h1>
       <motion.p
         initial={{
@@ -67,7 +63,7 @@ export const Hero = () => {
         className="text-center mt-6 text-sm md:text-lg text-muted dark:text-muted-dark max-w-2xl mx-auto relative z-10"
       >
         <Balancer>
-          BΛSE is a virtual home platform that lets buyers pick customizations and upgrades in real-time 3D, order their changes, and wrap the cost into their mortgage so their dream home is move-in ready.
+          BΛSE gives builders and brokers a unified system to visualize, price, and deliver fully customized homes- and then stay connected through ownership. From real-time 3D upgrades to post-close engagement, BΛSE helps you increase margins, shorten sales cycles, and build lasting client relationships.
         </Balancer>
       </motion.p>
       <motion.div
@@ -84,21 +80,26 @@ export const Hero = () => {
           duration: 0.5,
           delay: 0.4,
         }}
-        className="flex items-center gap-4 justify-center mt-6 relative z-10"
+        className="flex justify-center mt-6 relative z-10 px-4"
       >
-        <Button>Get started</Button>
-        <Button
-          variant="simple"
-          as={Link}
-          href="/contact"
-          className="flex space-x-2 items-center group"
-        >
-          <span>Contact us</span>
-          <HiArrowRight className="text-muted group-hover:translate-x-1 stroke-[1px] h-3 w-3 transition-transform duration-200 dark:text-muted-dark" />
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-sm">
+          <Link
+            href="/contact"
+            className="flex-1 h-10 bg-white border border-[#737B8B] rounded-lg px-4 py-2 flex items-center justify-center"
+          >
+            <span className="text-[#737B8B] text-sm text-center tracking-[-0.4px] font-normal">
+              Contact Us
+            </span>
+          </Link>
+          <button className="flex-1 h-10 bg-[#F9E2DE] border border-[#F9573A] rounded-lg px-4 py-2 flex items-center justify-center">
+            <span className="text-[#F9573A] text-sm text-center tracking-[-0.4px] font-bold">
+              Get on the Waitlist
+            </span>
+          </button>
+        </div>
       </motion.div>
-      <div className="p-4 border border-neutral-200 bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 rounded-[32px] mt-20 relative">
-        <div className="absolute inset-x-0 bottom-0 h-40 w-full bg-gradient-to-b from-transparent via-white to-white dark:via-black/50 dark:to-black scale-[1.1] pointer-events-none" />
+      <div className="p-4 border border-neutral-200 bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 rounded-[32px] mt-20 relative mb-20">
+        <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-b from-transparent to-white dark:to-black pointer-events-none" />
         <div className="p-2 bg-white dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
           <Image
             src="https://basemyhome.s3.us-east-1.amazonaws.com/ba57176a-bee3-4967-a5f5-cda30e5c1d0b.png"

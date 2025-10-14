@@ -7,7 +7,6 @@ import { IoIosClose } from "react-icons/io";
 import { Button } from "../button";
 import { Logo } from "../Logo";
 import { useMotionValueEvent, useScroll } from "framer-motion";
-import { ModeToggle } from "../mode-toggle";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
@@ -36,7 +35,7 @@ export const MobileNavbar = ({ navItems }: any) => {
         backgroundColor: 'rgba(46, 51, 68, 0.7)',
       } : undefined}
     >
-      <Logo />
+      <Logo showBackground={showBackground} />
       <IoIosMenu
         className="text-black dark:text-white h-6 w-6"
         onClick={() => setOpen(!open)}
@@ -44,14 +43,11 @@ export const MobileNavbar = ({ navItems }: any) => {
       {open && (
         <div className="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col items-start justify-start space-y-10  pt-5  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800">
           <div className="flex items-center justify-between w-full px-5">
-            <Logo />
-            <div className="flex items-center space-x-2">
-              <ModeToggle />
-              <IoIosClose
-                className="h-8 w-8 text-black dark:text-white"
-                onClick={() => setOpen(!open)}
-              />
-            </div>
+            <Logo showBackground={true} />
+            <IoIosClose
+              className="h-8 w-8 text-black dark:text-white"
+              onClick={() => setOpen(!open)}
+            />
           </div>
           <div className="flex flex-col items-start justify-start gap-[14px] px-8">
             {navItems.map((navItem: any, idx: number) => (
@@ -86,13 +82,21 @@ export const MobileNavbar = ({ navItems }: any) => {
               </>
             ))}
           </div>
-          <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-            <Button as={Link} href="/signup">
+          <div className="flex flex-col w-full items-start gap-3 px-8 py-4">
+            <Link
+              href="/contact"
+              className="flex items-center justify-center w-full h-12 px-8 rounded-full bg-[#1B1F3B] bg-opacity-[0.01] backdrop-blur-lg text-[#F7F9FD] text-base font-light tracking-[-0.4px]"
+              onClick={() => setOpen(false)}
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/signup"
+              className="flex items-center justify-center w-full h-12 px-8 rounded-full bg-[#F95738] bg-opacity-75 backdrop-blur-lg text-[#F7F9FD] text-base font-medium tracking-[-0.4px]"
+              onClick={() => setOpen(false)}
+            >
               Sign Up
-            </Button>
-            <Button variant="simple" as={Link} href="/login">
-              Login
-            </Button>
+            </Link>
           </div>
         </div>
       )}
