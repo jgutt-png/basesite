@@ -7,7 +7,7 @@ import React, { useId } from "react";
 export const Background = () => {
   return (
     <div className="absolute inset-0 h-full w-full pointer-events-none z-0">
-      <div className="absolute inset-0 h-full w-full bg-white dark:bg-black pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
+      <div className="absolute inset-0 h-full w-full bg-[#F7F9FD] dark:bg-black pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
       {Array.from({ length: 6 }).map((_, index) => (
         <div className="flex" key={"grid-column" + index}>
           {Array.from({ length: 10 }).map((_, index) => (
@@ -34,7 +34,7 @@ const GridBlock = () => {
 
 const Dot = () => {
   return (
-    <div className="h-6 w-6 bg-white dark:bg-neutral-900 flex items-center justify-center rounded-full">
+    <div className="h-6 w-6 bg-[#F7F9FD] dark:bg-neutral-900 flex items-center justify-center rounded-full">
       <div className="h-2 w-2 bg-neutral-200 dark:bg-neutral-700 rounded-full" />
     </div>
   );

@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Button } from "./button";
 export const CTA = () => {
   return (
-    <section className="py-60 w-full  overflow-hidden relative z-30">
-      <div className="bg-white dark:bg-black">
+    <section className="py-20 pb-0 w-full overflow-hidden relative z-30 mb-[-8rem]">
+      <div className="bg-transparent">
         <div className="mx-auto w-full relative z-20 sm:max-w-[40rem]  md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem] bg-gradient-to-br from-slate-800 dark:from-neutral-900 to-gray-900 sm:rounded-2xl">
           <div className="relative -mx-6   sm:mx-0 sm:rounded-2xl overflow-hidden px-6  md:px-8 ">
             <div

@@ -99,8 +99,8 @@ export const Hero = () => {
         </div>
       </motion.div>
       <div className="p-4 border border-neutral-200 bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 rounded-[32px] mt-20 relative mb-20">
-        <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-b from-transparent to-white dark:to-black pointer-events-none" />
-        <div className="p-2 bg-white dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
+        <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-b from-transparent to-[#F7F9FD] dark:to-black pointer-events-none" />
+        <div className="p-2 bg-[#F7F9FD] dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
           <Image
             src="https://basemyhome.s3.us-east-1.amazonaws.com/ba57176a-bee3-4967-a5f5-cda30e5c1d0b.png"
             alt="header"

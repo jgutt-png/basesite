@@ -5,19 +5,9 @@ import Image from "next/image";
 export const Footer = () => {
   const links = [
     {
-      name: "Pricing",
-      href: "/pricing",
-    },
-    {
-      name: "Blog",
-      href: "/blog",
-    },
-    {
-      name: "Contact",
+      name: "Contact Us",
       href: "/contact",
     },
-  ];
-  const legal = [
     {
       name: "Privacy Policy",
       href: "#",
@@ -25,24 +15,6 @@ export const Footer = () => {
     {
       name: "Terms of Service",
       href: "#",
-    },
-    {
-      name: "Refund Policy",
-      href: "#",
-    },
-  ];
-  const socials = [
-    {
-      name: "Twitter",
-      href: "https://twitter.com/mannupaaji",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/manuarora28",
-    },
-    {
-      name: "GitHub",
-      href: "https://github.com/manuarora700",
     },
   ];
   return (
@@ -60,7 +32,7 @@ export const Footer = () => {
         </svg>
       </div>
 
-      <div className="px-8 pt-20 pb-32 relative">
+      <div className="px-8 pt-48 pb-32 relative">
         <div className="max-w-7xl mx-auto text-sm text-neutral-400 flex sm:flex-row flex-col justify-between items-start">
           <div>
             <div className="mr-4 md:flex mb-4">
@@ -68,49 +40,24 @@ export const Footer = () => {
                 <Image
                   src="https://base-ai-portal.s3.us-east-1.amazonaws.com/BASE+logo.png"
                   alt="BASE Logo"
-                  width={120}
-                  height={48}
+                  width={180}
+                  height={72}
                   className="object-contain"
                 />
               </Link>
             </div>
-            <div className="text-white">Copyright &copy; 2025 BaseCo</div>
-            <div className="mt-2 text-white">All rights reserved</div>
+            <div className="text-white">Copyright &copy; 2025 BaseCo | All rights reserved</div>
           </div>
-          <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
-            <div className="flex justify-center space-y-4 flex-col mt-4">
-              {links.map((link) => (
-                <Link
-                  key={link.name}
-                  className="transition-colors hover:text-white text-neutral-400 text-xs sm:text-sm"
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-            <div className="flex justify-center space-y-4 flex-col mt-4">
-              {legal.map((link) => (
-                <Link
-                  key={link.name}
-                  className="transition-colors hover:text-white text-neutral-400 text-xs sm:text-sm"
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-            <div className="flex justify-center space-y-4 flex-col mt-4">
-              {socials.map((link) => (
-                <Link
-                  key={link.name}
-                  className="transition-colors hover:text-white text-neutral-400 text-xs sm:text-sm"
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+          <div className="flex justify-end space-y-4 flex-col mt-10 md:mt-0 items-end">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                className="transition-colors hover:text-white text-neutral-400 text-xs sm:text-sm"
+                href={link.href}
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

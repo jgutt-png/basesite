@@ -85,14 +85,14 @@ export const MobileNavbar = ({ navItems }: any) => {
           <div className="flex flex-col w-full items-start gap-3 px-8 py-4">
             <Link
               href="/contact"
-              className="flex items-center justify-center w-full h-12 px-8 rounded-full bg-[#1B1F3B] bg-opacity-[0.01] backdrop-blur-lg text-[#F7F9FD] text-base font-light tracking-[-0.4px]"
+              className="bg-neutral-900 relative z-10 hover:bg-black/90 border border-transparent text-white text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset] w-full"
               onClick={() => setOpen(false)}
             >
               Contact Us
             </Link>
             <Link
               href="/signup"
-              className="flex items-center justify-center w-full h-12 px-8 rounded-full bg-[#F95738] bg-opacity-75 backdrop-blur-lg text-[#F7F9FD] text-base font-medium tracking-[-0.4px]"
+              className="bg-[#F9573A] relative z-10 hover:bg-[#F9573A]/90 border border-transparent text-white text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset] w-full"
               onClick={() => setOpen(false)}
             >
               Sign Up

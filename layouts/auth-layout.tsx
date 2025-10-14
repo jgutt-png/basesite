@@ -18,15 +18,15 @@ export function AuthLayout({ children }: { children: React.ReactNode }) {
                 "font-semibold text-xl text-center text-muted dark:text-muted-dark"
               )}
             >
-              Every AI is used by thousands of users
+              BΛSE is used by thousands of users
             </p>
             <p
               className={cn(
                 "font-normal text-base text-center text-neutral-500 dark:text-neutral-400 mt-8"
               )}
             >
-              With lots of AI applications around, Everything AI stands out with
-              its state of the art Shitposting capabilities.
+              With lots of AI applications around, BΛSE stands out with
+              its unified platform for builders, brokers, and enterprise partners.
             </p>
           </div>
           <HorizontalGradient className="top-20" />

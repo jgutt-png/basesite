@@ -4,7 +4,7 @@ import { UserIcon } from "lucide-react";
 
 export const Features = () => {
   return (
-    <div className="relative z-20 py-10 lg:py-40 overflow-hidden">
+    <div className="relative z-20 py-10 lg:py-40 overflow-hidden bg-[#F7F9FD]">
       <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-semibold text-center mb-6 leading-tight tracking-[-0.4px] max-w-5xl mx-auto">
         The Platform That Grows With Every Home You Sell.
       </h2>
@@ -15,51 +15,56 @@ export const Features = () => {
       </Subheading>
 
       <div className="w-full max-w-7xl mx-auto mt-12 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* For Builders Section */}
+        <div className="relative overflow-visible">
+          {/* SVG Grid Background - 2 columns x 2 rows with dashed borders */}
+          <svg className="absolute -left-4 -right-4 -top-4 -bottom-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] pointer-events-none" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ zIndex: 0 }}>
+            {/* Horizontal lines - extended beyond edges */}
+            <line x1="0" y1="0" x2="200" y2="0" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+            <line x1="0" y1="88" x2="200" y2="88" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+            <line x1="0" y1="200" x2="200" y2="200" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+
+            {/* Vertical lines - extended beyond edges */}
+            <line x1="0" y1="0" x2="0" y2="200" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+            <line x1="100" y1="0" x2="100" y2="200" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+            <line x1="200" y1="0" x2="200" y2="200" stroke="#1B1F3B" strokeOpacity="0.15" strokeWidth="0.3" strokeDasharray="2 4"/>
+          </svg>
+
+          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-0" style={{ zIndex: 1 }}>
+          {/* Bento Card 1 */}
           <div className="flex flex-col p-6">
-            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Builders:</h3>
-            <p className="text-base text-[#737c8b] mb-6">
-              Make every home custom, increase your sale price by 30%, and sell your units sold in advance- long before you've even broken ground.
-            </p>
-            <div className="relative w-full h-[280px] rounded-2xl bg-gray-200">
-              {/* Builder Dashboard Image placeholder */}
-            </div>
+            <img
+              src="https://base-ai-portal.s3.us-east-1.amazonaws.com/bento+1.png"
+              alt="Bento 1"
+              className="w-full h-auto"
+            />
           </div>
 
-          {/* For Brokers & Agents Section */}
+          {/* Bento Card 2 */}
           <div className="flex flex-col p-6">
-            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Brokers & Agents:</h3>
-            <p className="text-base text-[#737c8b] mb-6">
-              Stand out in a crowded market, crush cosmetic objections, and increase commissions by selling homes for more.
-            </p>
-            <div className="relative w-full h-[280px] rounded-2xl bg-gray-200">
-              {/* Broker Dashboard Image placeholder */}
-            </div>
+            <img
+              src="https://base-ai-portal.s3.us-east-1.amazonaws.com/bento+2.png"
+              alt="Bento 2"
+              className="w-full h-auto"
+            />
           </div>
 
-          {/* For Home Buyers, Owners, and Sellers Section */}
+          {/* Bento Card 3 */}
           <div className="flex flex-col p-6">
-            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">
-              For Home Buyers, Owners, and Sellers:
-            </h3>
-            <p className="text-base text-[#737c8b] mb-6">
-              BΛSE isn't just for the sale, it's for the entire lifecycle of the home. From before move-in, through your mortgage, and even when it's time to sell, you can manage everything from buying furniture, hiring painters, or even tracking your HVAC warranty. BΛSE does it all.
-            </p>
-            <div className="relative w-full h-[400px] rounded-2xl bg-gray-200">
-              {/* Home Owner Dashboard placeholder */}
-            </div>
+            <img
+              src="https://base-ai-portal.s3.us-east-1.amazonaws.com/Bento+3.png"
+              alt="Bento 3"
+              className="w-full h-auto"
+            />
           </div>
 
-          {/* For Enterprise Section */}
+          {/* Bento Card 4 */}
           <div className="flex flex-col p-6">
-            <h3 className="text-2xl font-medium text-[#305fde] tracking-[-0.4px] mb-3">For Enterprise:</h3>
-            <p className="text-base text-[#737c8b] mb-6">
-              BaseAI is your personal, private, in-house AI assistant that can do everything from checking building codes or zoning laws to pulling information from your internal client documents- all custom-configured for your organization.
-            </p>
-            <div className="relative w-full h-[400px] rounded-2xl bg-gray-200">
-              {/* Enterprise AI Chat placeholder */}
-            </div>
+            <img
+              src="https://base-ai-portal.s3.us-east-1.amazonaws.com/bento+4.png"
+              alt="Bento 4"
+              className="w-full h-auto"
+            />
+          </div>
           </div>
         </div>
       </div>

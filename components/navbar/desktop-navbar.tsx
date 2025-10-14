@@ -73,15 +73,17 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         <Link
           href="/contact"
           className={cn(
-            "flex items-center justify-center h-10 px-6 rounded-full backdrop-blur-lg text-sm font-light tracking-[-0.4px] transition-colors duration-200",
-            showBackground ? "bg-white text-[#1B1F3B]" : "bg-[#737B8B] text-white"
+            "relative z-10 border border-transparent text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center",
+            showBackground
+              ? "bg-white/20 backdrop-blur-md text-white hover:bg-white/30 shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset]"
+              : "bg-white text-black hover:bg-gray-100 shadow-[0px_-1px_0px_0px_#00000040_inset,_0px_1px_0px_0px_#00000040_inset]"
           )}
         >
           Contact Us
         </Link>
         <Link
           href="/signup"
-          className="flex items-center justify-center h-10 px-6 rounded-full bg-[#F95738] bg-opacity-75 backdrop-blur-lg text-[#F7F9FD] text-sm font-medium tracking-[-0.4px]"
+          className="bg-[#F9573A] relative z-10 hover:bg-[#F9573A]/90 border border-transparent text-white text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset]"
         >
           Sign Up
         </Link>

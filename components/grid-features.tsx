@@ -100,10 +100,10 @@ const Feature = ({
       )}
     >
       {index < 4 && (
-        <div className="opacity-0 group-hover:opacity-100 transition duration-200 group absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+        <div className="opacity-0 group-hover:opacity-100 transition duration-200 group absolute inset-0 h-full w-full bg-gradient-to-t from-[#F7F9FD] dark:from-neutral-800 to-transparent pointer-events-none" />
       )}
       {index >= 4 && (
-        <div className="opacity-0 group-hover:opacity-100 transition duration-200 group absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+        <div className="opacity-0 group-hover:opacity-100 transition duration-200 group absolute inset-0 h-full w-full bg-gradient-to-b from-[#F7F9FD] dark:from-neutral-800 to-transparent pointer-events-none" />
       )}
       <div className="mb-4 relative z-10 px-10">{icon}</div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">

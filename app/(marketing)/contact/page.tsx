@@ -6,9 +6,9 @@ import { HorizontalGradient } from "@/components/horizontal-gradient";
 import { ContactForm } from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Everything AI",
+  title: "Contact Us - BΛSE",
   description:
-    "Everything AI is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.",
+    "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
   openGraph: {
     images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
   },
@@ -28,15 +28,15 @@ export default function PricingPage() {
                 "font-semibold text-xl text-center dark:text-muted-dark text-muted"
               )}
             >
-              Every AI is used by thousands of users
+              BΛSE is used by thousands of users
             </p>
             <p
               className={cn(
                 "font-normal text-base text-center text-neutral-500 dark:text-neutral-200 mt-8"
               )}
             >
-              With lots of AI applications around, Everything AI stands out with
-              its state of the art Shitposting capabilities.
+              With lots of AI applications around, BΛSE stands out with
+              its unified platform for builders, brokers, and enterprise partners.
             </p>
           </div>
           <HorizontalGradient className="top-20" />
