@@ -15,10 +15,10 @@ export const FeatureGrid = () => {
     <div className="w-full bg-[#F7F9FD] py-16 md:py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-medium text-center mb-4 leading-tight tracking-[-0.4px]">
-          Give your Buyers the World's Best Customer Experience
+          Give your Buyers the World&apos;s Best Customer Experience
         </h2>
         <p className="text-xl md:text-2xl text-[#737B8B] text-center max-w-4xl mx-auto mb-16">
-          Four out of five homeowners regret their purchase. The fifth one used BΛSE. Whether you're an agent or a builder, let your buyers turn any home into their dream home.
+          Four out of five homeowners regret their purchase. The fifth one used BΛSE. Whether you&apos;re an agent or a builder, let your buyers turn any home into their dream home.
         </p>
 
         <div className="relative max-w-7xl mx-auto">
@@ -146,7 +146,7 @@ export const FeatureGrid = () => {
               Transfer Your Legacy
             </h3>
             <p className="text-base text-[#737B8B]">
-              When it's time to sell, your BΛSE becomes a digital history of your home, showcasing upgrades, value, and maintenance for the next owner.
+              When it&apos;s time to sell, your BΛSE becomes a digital history of your home, showcasing upgrades, value, and maintenance for the next owner.
             </p>
           </div>
           </div>
