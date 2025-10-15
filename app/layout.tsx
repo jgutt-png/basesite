@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     icon: "https://base-ai-portal.s3.us-east-1.amazonaws.com/BASE%2BIcon%2BLightmode%2BTransparent.png",
   },
   openGraph: {
-    images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
+    images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };
 
