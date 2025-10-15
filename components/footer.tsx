@@ -10,11 +10,11 @@ export const Footer = () => {
     },
     {
       name: "Privacy Policy",
-      href: "#",
+      href: "/privacy",
     },
     {
       name: "Terms of Service",
-      href: "#",
+      href: "/terms",
     },
   ];
   return (
