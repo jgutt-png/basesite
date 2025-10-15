@@ -24,6 +24,26 @@ export default function PrivacyPage() {
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                Table of Contents
+              </h2>
+              <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+                <li><a href="#introduction" className="text-[#F9573A] hover:underline">Introduction</a></li>
+                <li><a href="#information-we-collect" className="text-[#F9573A] hover:underline">Information We Collect</a></li>
+                <li><a href="#how-we-use-information" className="text-[#F9573A] hover:underline">How We Use Information</a></li>
+                <li><a href="#how-we-share-information" className="text-[#F9573A] hover:underline">How We Share Information</a></li>
+                <li><a href="#data-retention" className="text-[#F9573A] hover:underline">Data Retention</a></li>
+                <li><a href="#security" className="text-[#F9573A] hover:underline">Security</a></li>
+                <li><a href="#your-choices" className="text-[#F9573A] hover:underline">Your Choices</a></li>
+                <li><a href="#links-to-other-websites" className="text-[#F9573A] hover:underline">Links to Other Websites</a></li>
+                <li><a href="#childrens-privacy" className="text-[#F9573A] hover:underline">Children&apos;s Privacy</a></li>
+                <li><a href="#international-users" className="text-[#F9573A] hover:underline">International Users</a></li>
+                <li><a href="#changes-to-policy" className="text-[#F9573A] hover:underline">Changes to This Policy</a></li>
+                <li><a href="#contact-us" className="text-[#F9573A] hover:underline">Contact Us</a></li>
+              </ol>
+            </section>
+
+            <section className="mb-10" id="introduction">
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 1. Introduction
               </h2>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
@@ -41,7 +61,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="information-we-collect">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 2. Information We Collect
               </h2>
@@ -78,7 +98,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="how-we-use-information">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 3. How We Use Information
               </h2>
@@ -97,7 +117,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="how-we-share-information">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 4. How We Share Information
               </h2>
@@ -117,7 +137,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="data-retention">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 5. Data Retention
               </h2>
@@ -137,7 +157,7 @@ export default function PrivacyPage() {
               </ul>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="security">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 6. Security
               </h2>
@@ -146,7 +166,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="your-choices">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 7. Your Choices
               </h2>
@@ -168,7 +188,7 @@ export default function PrivacyPage() {
               </ul>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="links-to-other-websites">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 8. Links to Other Websites
               </h2>
@@ -177,7 +197,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="childrens-privacy">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 9. Children&apos;s Privacy
               </h2>
@@ -186,7 +206,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="international-users">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 10. International Users
               </h2>
@@ -195,7 +215,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="changes-to-policy">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 11. Changes to This Policy
               </h2>
@@ -204,7 +224,7 @@ export default function PrivacyPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="contact-us">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 12. Contact Us
               </h2>

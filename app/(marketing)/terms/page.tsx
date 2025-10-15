@@ -62,35 +62,35 @@ export default function TermsPage() {
                 Table of Contents
               </h2>
               <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Our Services</li>
-                <li>Intellectual Property Rights</li>
-                <li>User Representations</li>
-                <li>User Registration</li>
-                <li>Purchases and Payment</li>
-                <li>Refund Policy</li>
-                <li>Prohibited Activities</li>
-                <li>User Generated Contributions</li>
-                <li>Contribution License</li>
-                <li>Third-Party Websites and Content</li>
-                <li>Services Management</li>
-                <li>Privacy Policy</li>
-                <li>Term and Termination</li>
-                <li>Modifications and Interruptions</li>
-                <li>Governing Law</li>
-                <li>Dispute Resolution</li>
-                <li>Corrections</li>
-                <li>Disclaimer</li>
-                <li>Limitations of Liability</li>
-                <li>Indemnification</li>
-                <li>User Data</li>
-                <li>Electronic Communications, Transactions, and Signatures</li>
-                <li>California Users and Residents</li>
-                <li>Miscellaneous</li>
-                <li>Contact Us</li>
+                <li><a href="#our-services" className="text-[#F9573A] hover:underline">Our Services</a></li>
+                <li><a href="#intellectual-property-rights" className="text-[#F9573A] hover:underline">Intellectual Property Rights</a></li>
+                <li><a href="#user-representations" className="text-[#F9573A] hover:underline">User Representations</a></li>
+                <li><a href="#user-registration" className="text-[#F9573A] hover:underline">User Registration</a></li>
+                <li><a href="#purchases-and-payment" className="text-[#F9573A] hover:underline">Purchases and Payment</a></li>
+                <li><a href="#refund-policy" className="text-[#F9573A] hover:underline">Refund Policy</a></li>
+                <li><a href="#prohibited-activities" className="text-[#F9573A] hover:underline">Prohibited Activities</a></li>
+                <li><a href="#user-generated-contributions" className="text-[#F9573A] hover:underline">User Generated Contributions</a></li>
+                <li><a href="#contribution-license" className="text-[#F9573A] hover:underline">Contribution License</a></li>
+                <li><a href="#third-party-websites-and-content" className="text-[#F9573A] hover:underline">Third-Party Websites and Content</a></li>
+                <li><a href="#services-management" className="text-[#F9573A] hover:underline">Services Management</a></li>
+                <li><a href="#privacy-policy" className="text-[#F9573A] hover:underline">Privacy Policy</a></li>
+                <li><a href="#term-and-termination" className="text-[#F9573A] hover:underline">Term and Termination</a></li>
+                <li><a href="#modifications-and-interruptions" className="text-[#F9573A] hover:underline">Modifications and Interruptions</a></li>
+                <li><a href="#governing-law" className="text-[#F9573A] hover:underline">Governing Law</a></li>
+                <li><a href="#dispute-resolution" className="text-[#F9573A] hover:underline">Dispute Resolution</a></li>
+                <li><a href="#corrections" className="text-[#F9573A] hover:underline">Corrections</a></li>
+                <li><a href="#disclaimer" className="text-[#F9573A] hover:underline">Disclaimer</a></li>
+                <li><a href="#limitations-of-liability" className="text-[#F9573A] hover:underline">Limitations of Liability</a></li>
+                <li><a href="#indemnification" className="text-[#F9573A] hover:underline">Indemnification</a></li>
+                <li><a href="#user-data" className="text-[#F9573A] hover:underline">User Data</a></li>
+                <li><a href="#electronic-communications" className="text-[#F9573A] hover:underline">Electronic Communications, Transactions, and Signatures</a></li>
+                <li><a href="#california-users" className="text-[#F9573A] hover:underline">California Users and Residents</a></li>
+                <li><a href="#miscellaneous" className="text-[#F9573A] hover:underline">Miscellaneous</a></li>
+                <li><a href="#contact-us" className="text-[#F9573A] hover:underline">Contact Us</a></li>
               </ol>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="our-services">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 1. Our Services
               </h2>
@@ -108,7 +108,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="intellectual-property-rights">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 2. Intellectual Property Rights
               </h2>
@@ -151,7 +151,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="user-representations">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 3. User Representations
               </h2>
@@ -172,7 +172,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="user-registration">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 4. User Registration
               </h2>
@@ -181,7 +181,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="purchases-and-payment">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 5. Purchases and Payment
               </h2>
@@ -196,7 +196,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="refund-policy">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 6. Refund Policy
               </h2>
@@ -205,7 +205,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="prohibited-activities">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 7. Prohibited Activities
               </h2>
@@ -234,7 +234,7 @@ export default function TermsPage() {
               </ul>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="user-generated-contributions">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 8. User Generated Contributions
               </h2>
@@ -256,7 +256,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="contribution-license">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 9. Contribution License
               </h2>
@@ -271,7 +271,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="third-party-websites-and-content">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 10. Third-Party Websites and Content
               </h2>
@@ -280,7 +280,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="services-management">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 11. Services Management
               </h2>
@@ -289,7 +289,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="privacy-policy">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 12. Privacy Policy
               </h2>
@@ -302,7 +302,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="term-and-termination">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 13. Term and Termination
               </h2>
@@ -314,7 +314,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="modifications-and-interruptions">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 14. Modifications and Interruptions
               </h2>
@@ -326,7 +326,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="governing-law">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 15. Governing Law
               </h2>
@@ -335,7 +335,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="dispute-resolution">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 16. Dispute Resolution
               </h2>
@@ -378,7 +378,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="corrections">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 17. Corrections
               </h2>
@@ -387,7 +387,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="disclaimer">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 18. Disclaimer
               </h2>
@@ -396,7 +396,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="limitations-of-liability">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 19. Limitations of Liability
               </h2>
@@ -405,7 +405,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="indemnification">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 20. Indemnification
               </h2>
@@ -414,7 +414,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="user-data">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 21. User Data
               </h2>
@@ -423,7 +423,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="electronic-communications">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 22. Electronic Communications, Transactions, and Signatures
               </h2>
@@ -432,7 +432,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="california-users">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 23. California Users and Residents
               </h2>
@@ -441,7 +441,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="miscellaneous">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 24. Miscellaneous
               </h2>
@@ -450,7 +450,7 @@ export default function TermsPage() {
               </p>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-10" id="contact-us">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 25. Contact Us
               </h2>
