@@ -12,7 +12,7 @@ import {
 
 export const FeatureGrid = () => {
   return (
-    <div className="w-full bg-[#F7F9FD] py-16 md:py-24">
+    <div className="w-full bg-[#F7F9FD] py-16 md:py-24 relative z-10">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-medium text-center mb-4 leading-tight tracking-[-0.4px]">
           Give your Buyers the World&apos;s Best Customer Experience

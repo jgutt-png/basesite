@@ -91,11 +91,11 @@ export const MobileNavbar = ({ navItems }: any) => {
               Contact Us
             </Link>
             <Link
-              href="/signup"
+              href="/contact"
               className="bg-[#F9573A] relative z-10 hover:bg-[#F9573A]/90 border border-transparent text-white text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset] w-full"
               onClick={() => setOpen(false)}
             >
-              Sign Up
+              Get Started
             </Link>
           </div>
         </div>

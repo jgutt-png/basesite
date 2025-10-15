@@ -28,11 +28,14 @@ export const CTA = () => {
               </p>
 
               <div className="relative z-10 mx-auto flex justify-center mt-6">
-                <div className="flex flex-col items-center justify-center w-[180px] h-[56px] bg-[#f95738] border-[1.25px] border-[#f95738] rounded-[16px] px-6 py-2">
+                <Link
+                  href="/contact"
+                  className="flex flex-col items-center justify-center w-[180px] h-[56px] bg-[#f95738] hover:bg-[#f95738]/90 border-[1.25px] border-[#f95738] rounded-[16px] px-6 py-2 transition-colors duration-200 cursor-pointer"
+                >
                   <h2 className="text-[18px] font-bold text-[#f7f9fd] text-center tracking-[-0.4px]">
                     Get Started
                   </h2>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
