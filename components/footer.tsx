@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { IconBrandLinkedin } from "@tabler/icons-react";
 
 export const Footer = () => {
   const links = [
@@ -46,7 +47,18 @@ export const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="text-white">Copyright &copy; 2025 BaseCo | All rights reserved</div>
+            <div className="flex flex-col gap-3">
+              <div className="text-white">Copyright &copy; 2025 BaseCo | All rights reserved</div>
+              <Link
+                href="https://www.linkedin.com/company/basemyhome"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition-colors w-fit"
+                aria-label="LinkedIn"
+              >
+                <IconBrandLinkedin size={32} />
+              </Link>
+            </div>
           </div>
           <div className="flex justify-end space-y-4 flex-col mt-10 md:mt-0 items-end">
             {links.map((link) => (
