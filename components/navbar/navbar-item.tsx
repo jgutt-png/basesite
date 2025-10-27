@@ -11,6 +11,7 @@ type Props = {
   active?: boolean;
   className?: string;
   target?: "_blank";
+  showBackground?: boolean;
 };
 
 export function NavBarItem({
@@ -19,6 +20,7 @@ export function NavBarItem({
   active,
   target,
   className,
+  showBackground,
 }: Props) {
   const pathname = usePathname();
 
@@ -26,9 +28,12 @@ export function NavBarItem({
     <Link
       href={href}
       className={cn(
-        "flex items-center justify-center  text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-[#F5F5F5] dark:hover:bg-neutral-800 hover:text-black text-muted dark:text-muted-dark",
+        "flex items-center justify-center text-base font-semibold leading-[110%] px-4 py-2 rounded-full transition-all duration-200",
+        showBackground
+          ? "text-white hover:bg-white/20 hover:shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset]"
+          : "text-muted hover:bg-white/20 hover:text-black",
         (active || pathname?.includes(href)) &&
-          "bg-gray-100 dark:bg-neutral-800 text-black",
+          (showBackground ? "bg-white/20" : "bg-white/20 text-black"),
         className
       )}
       target={target}

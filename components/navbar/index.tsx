@@ -3,7 +3,11 @@ import { DesktopNavbar } from "./desktop-navbar";
 import { MobileNavbar } from "./mobile-navbar";
 import { motion } from "framer-motion";
 
-const navItems: { title: string; link: string; target?: "_blank" }[] = [];
+const navItems: { title: string; link: string; target?: "_blank" }[] = [
+  { title: "Features", link: "/#features" },
+  { title: "Platform", link: "/#platform" },
+  { title: "Wait List", link: "/#waitlist" },
+];
 
 export function NavBar() {
   return (

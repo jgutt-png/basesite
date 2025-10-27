@@ -4,7 +4,7 @@ import { UserIcon } from "lucide-react";
 
 export const Features = () => {
   return (
-    <div className="relative z-20 py-10 lg:py-40 overflow-hidden bg-[#F7F9FD]">
+    <div id="platform" className="relative z-20 py-10 lg:py-40 overflow-hidden bg-[#F7F9FD]">
       <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1B1F3B] font-semibold text-center mb-6 leading-tight tracking-[-0.4px] max-w-5xl mx-auto">
         The Platform That Grows With Every Home You Sell.
       </h2>

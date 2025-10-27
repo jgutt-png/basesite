@@ -61,13 +61,13 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       </AnimatePresence>
       <div className="flex flex-row gap-2 items-center">
         <Logo showBackground={showBackground} />
-        <div className="flex items-center gap-1.5">
-          {navItems.map((item) => (
-            <NavBarItem href={item.link} key={item.title} target={item.target}>
-              {item.title}
-            </NavBarItem>
-          ))}
-        </div>
+      </div>
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-1.5">
+        {navItems.map((item) => (
+          <NavBarItem href={item.link} key={item.title} target={item.target} showBackground={showBackground}>
+            {item.title}
+          </NavBarItem>
+        ))}
       </div>
       <div className="flex items-center space-x-3">
         <Link
@@ -82,7 +82,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
           Contact Us
         </Link>
         <Link
-          href="/contact"
+          href="/get-started"
           className="bg-[#F9573A] relative z-10 hover:bg-[#F9573A]/90 border border-transparent text-white text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset]"
         >
           Get Started

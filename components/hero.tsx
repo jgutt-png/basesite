@@ -94,7 +94,7 @@ export const Hero = () => {
             </span>
           </Link>
           <Link
-            href="/contact"
+            href="/get-started"
             className="flex-1 h-10 bg-[#F9E2DE] hover:bg-[#F9E2DE]/90 border border-[#F9573A] rounded-lg px-4 py-2 flex items-center justify-center transition-colors"
           >
             <span className="text-[#F9573A] text-sm text-center tracking-[-0.4px] font-bold">
