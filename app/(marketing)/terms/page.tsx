@@ -1,10 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - BASE",
+  title: "Terms of Service - BΛSE",
   description:
-    "Terms of Service for BaseCo, Inc. Legal terms governing your use of BASE platform and services.",
+    "Terms of Service for BaseCo, Inc. Legal terms governing your use of BΛSE platform and services.",
   openGraph: {
+    title: "Terms of Service - BΛSE",
+    description: "Terms of Service for BaseCo, Inc. Legal terms governing your use of BΛSE platform and services.",
+    images: [{
+      url: "https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png",
+      width: 1200,
+      height: 630,
+      alt: "BΛSE - 3D Sales & Ownership Platform",
+    }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - BΛSE",
+    description: "Terms of Service for BaseCo, Inc. Legal terms governing your use of BΛSE platform and services.",
     images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };

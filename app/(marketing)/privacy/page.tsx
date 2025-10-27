@@ -1,10 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - BASE",
+  title: "Privacy Policy - BΛSE",
   description:
     "Privacy Policy for BaseCo, Inc. Learn how we collect, use, and protect your information.",
   openGraph: {
+    title: "Privacy Policy - BΛSE",
+    description: "Privacy Policy for BaseCo, Inc. Learn how we collect, use, and protect your information.",
+    images: [{
+      url: "https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png",
+      width: 1200,
+      height: 630,
+      alt: "BΛSE - 3D Sales & Ownership Platform",
+    }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - BΛSE",
+    description: "Privacy Policy for BaseCo, Inc. Learn how we collect, use, and protect your information.",
     images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };
