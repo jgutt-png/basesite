@@ -12,7 +12,12 @@ export default function ContactPage() {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://form.jotform.com/jsform/252995994414171';
-    document.body.appendChild(script);
+
+    // Append to the specific container instead of body
+    const container = document.getElementById('jotform-container');
+    if (container) {
+      container.appendChild(script);
+    }
 
     // Cleanup
     return () => {
