@@ -10,10 +10,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing - BΛSE",
   description:
-    "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    "Learn more about BΛSE pricing plans. Choose the right plan for your business and discover how BΛSE can transform your home sales and ownership experience.",
   openGraph: {
     title: "Pricing - BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    description: "Learn more about BΛSE pricing plans. Choose the right plan for your business and discover how BΛSE can transform your home sales experience.",
     images: [{
       url: "https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png",
       width: 1200,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pricing - BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    description: "Learn more about BΛSE pricing plans. Choose the right plan for your business and discover how BΛSE can transform your home sales experience.",
     images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };

@@ -8,13 +8,13 @@ import { ThemeProvider } from "@/context/theme-provider";
 export const metadata: Metadata = {
   title: "BΛSE",
   description:
-    "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    "Learn more about BΛSE - a 3D sales and ownership platform for the entire home lifecycle. Visualize, customize, and manage your home with interactive design tools and AI-driven workflows.",
   icons: {
     icon: "https://base-ai-portal.s3.us-east-1.amazonaws.com/BASE%2BIcon%2BLightmode%2BTransparent.png",
   },
   openGraph: {
-    title: "BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    title: "BΛSE - 3D Sales & Ownership Platform",
+    description: "Learn more about BΛSE - a 3D sales and ownership platform for the entire home lifecycle. Visualize, customize, and manage your home with interactive design tools.",
     images: [{
       url: "https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png",
       width: 1200,
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    title: "BΛSE - 3D Sales & Ownership Platform",
+    description: "Learn more about BΛSE - a 3D sales and ownership platform for the entire home lifecycle. Visualize, customize, and manage your home with interactive design tools.",
     images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };

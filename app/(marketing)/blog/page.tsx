@@ -7,12 +7,12 @@ import { Subheading } from "@/components/subheading";
 import { BlogCard } from "@/components/blog-card";
 
 export const metadata: Metadata = {
-  title: "Blogs - BΛSE",
+  title: "Blog - BΛSE",
   description:
-    "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    "Learn more about BΛSE through our blog. Discover insights, tips, and updates about 3D home visualization, real estate technology, and the future of home ownership.",
   openGraph: {
-    title: "Blogs - BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    title: "Blog - BΛSE",
+    description: "Learn more about BΛSE through our blog. Discover insights, tips, and updates about 3D home visualization and real estate technology.",
     images: [{
       url: "https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png",
       width: 1200,
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blogs - BΛSE",
-    description: "BΛSE is a unified platform for builders, brokers, and enterprise partners that drives sales and engagement. From interactive design tools to AI-driven workflows, BΛSE transforms every transaction into an ongoing relationship.",
+    title: "Blog - BΛSE",
+    description: "Learn more about BΛSE through our blog. Discover insights, tips, and updates about 3D home visualization and real estate technology.",
     images: ["https://basemyhome.s3.us-east-1.amazonaws.com/opengraph_image.png"],
   },
 };
