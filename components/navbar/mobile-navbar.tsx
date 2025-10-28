@@ -27,7 +27,6 @@ export const MobileNavbar = ({ navItems }: any) => {
     <div
       className={cn(
         "flex justify-between items-center w-full rounded-full px-2.5 py-1.5 transition duration-200",
-        !showBackground && "bg-white dark:bg-neutral-900",
         showBackground &&
           "backdrop-blur-md border border-white/10 shadow-lg"
       )}
