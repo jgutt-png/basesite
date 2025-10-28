@@ -10,7 +10,7 @@ import { Link } from "next-view-transitions";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col min-h-screen pt-20 md:pt-40 relative">
+    <div className="flex flex-col min-h-screen pt-32 md:pt-40 relative">
       <HeroGrid />
       <motion.div
         initial={{
