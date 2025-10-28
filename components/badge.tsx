@@ -12,7 +12,7 @@ export const Badge: React.FC<
       <span className="absolute inset-0 overflow-hidden rounded-full">
         <span className="absolute inset-0 rounded-full  opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       </span>
-      <div className="relative flex space-x-2 items-center z-10 rounded-full bg-neutral-100 dark:bg-neutral-800 py-1.5 px-4">
+      <div className="relative flex space-x-2 items-center z-10 rounded-full bg-neutral-100 dark:bg-neutral-800 py-1 px-4">
         <span className="flex items-center gap-2">
           {typeof children === 'string' && children.includes('|') ? (
             <>
