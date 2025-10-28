@@ -69,7 +69,7 @@ export default function ContactPage() {
               </h1>
             </div>
 
-            <div id="jotform-container">
+            <div id="jotform-container" className="[&_iframe]:rounded-2xl [&_form]:rounded-2xl">
               {/* JotForm will be injected here */}
             </div>
           </div>
