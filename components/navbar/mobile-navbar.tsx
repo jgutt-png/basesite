@@ -36,7 +36,10 @@ export const MobileNavbar = ({ navItems }: any) => {
     >
       <Logo showBackground={showBackground} />
       <IoIosMenu
-        className="text-black dark:text-white h-6 w-6"
+        className={cn(
+          "h-6 w-6",
+          showBackground ? "text-white" : "text-black dark:text-white"
+        )}
         onClick={() => setOpen(!open)}
       />
       {open && (
