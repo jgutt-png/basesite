@@ -60,7 +60,7 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-end space-y-4 flex-col mt-10 md:mt-0 items-end">
+          <div className="flex justify-end space-y-4 flex-col mt-10 md:mt-0 items-start md:items-end">
             {links.map((link) => (
               <Link
                 key={link.name}
