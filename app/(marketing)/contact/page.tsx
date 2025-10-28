@@ -63,7 +63,7 @@ export default function ContactPage() {
         {/* Left side - JotForm */}
         <div className="relative flex items-start justify-center px-6 py-20 lg:py-32">
           <div className="w-full max-w-xl">
-            <div className="mb-8">
+            <div className="mb-8 hidden md:block">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                 Contact Us
               </h1>
