@@ -11,7 +11,7 @@ export default function ContactPage() {
     // Load the JotForm script
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://form.jotform.com/jsform/252995994414171';
+    script.src = 'https://form.jotform.com/jsform/253004073145142';
 
     // Append to the specific container instead of body
     const container = document.getElementById('jotform-container');

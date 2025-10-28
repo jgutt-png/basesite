@@ -8,17 +8,16 @@ export default function ContactPage() {
     // Set document title
     document.title = "Contact Us - BASE";
 
-    // Load the JotForm embed handler script
+    // Load the JotForm script
     const script = document.createElement('script');
-    script.src = 'https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js';
-    script.async = true;
-    script.onload = () => {
-      // Initialize the embed handler after script loads
-      if (typeof window !== 'undefined' && (window as any).jotformEmbedHandler) {
-        (window as any).jotformEmbedHandler("iframe[id='JotFormIFrame-252168000926048']", "https://form.jotform.com/");
-      }
-    };
-    document.body.appendChild(script);
+    script.type = 'text/javascript';
+    script.src = 'https://form.jotform.com/jsform/253004879730156';
+
+    // Append to the specific container instead of body
+    const container = document.getElementById('jotform-container');
+    if (container) {
+      container.appendChild(script);
+    }
 
     // Cleanup
     return () => {
@@ -70,21 +69,8 @@ export default function ContactPage() {
               </h1>
             </div>
 
-            <div>
-              <iframe
-                id="JotFormIFrame-252168000926048"
-                title="Reach out and send us a message!"
-                allow="geolocation; microphone; camera; fullscreen; payment"
-                src="https://form.jotform.com/252168000926048"
-                scrolling="no"
-                style={{
-                  minWidth: '100%',
-                  maxWidth: '100%',
-                  height: '1200px',
-                  border: 'none',
-                  overflow: 'hidden'
-                }}
-              />
+            <div id="jotform-container">
+              {/* JotForm will be injected here */}
             </div>
           </div>
         </div>
