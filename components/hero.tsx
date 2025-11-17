@@ -101,7 +101,7 @@ export const Hero = () => {
           </Link>
         </div>
       </motion.div>
-      <div className="w-full px-4 md:px-12 lg:px-16">
+      <div className="w-full">
         <div className="p-4 border border-neutral-200 bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 rounded-[32px] mt-20 relative z-20 mb-20">
           <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-b from-transparent to-[#F7F9FD] dark:to-black pointer-events-none" />
           <div className="p-2 bg-[#F7F9FD] dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
