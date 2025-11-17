@@ -4,8 +4,6 @@ import Balancer from "react-wrap-balancer";
 import { Badge } from "./badge";
 import { motion } from "framer-motion";
 import { HeroGrid } from "./hero-grid";
-
-import Image from "next/image";
 import { Link } from "next-view-transitions";
 
 export const Hero = () => {
@@ -106,13 +104,15 @@ export const Hero = () => {
       <div className="p-4 border border-neutral-200 bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 rounded-[32px] mt-20 relative z-20 mb-20">
         <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-b from-transparent to-[#F7F9FD] dark:to-black pointer-events-none" />
         <div className="p-2 bg-[#F7F9FD] dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
-          <Image
-            src="https://basemyhome.s3.us-east-1.amazonaws.com/ba57176a-bee3-4967-a5f5-cda30e5c1d0b.png"
-            alt="header"
-            width={1920}
-            height={1080}
-            className="rounded-[20px]"
-          />
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-[20px]"
+              src="https://www.youtube.com/embed/cEPNBh_qVtQ"
+              title="BASE Platform Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
     </div>
